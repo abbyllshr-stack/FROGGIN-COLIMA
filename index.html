@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
 
@@ -9,33 +9,60 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-    <title>🐸 Froggin Colima</title>
+    <title>🐸 FROGGIN Colima</title>
 
+    <!-- Estilos generales -->
     <link
         rel="stylesheet"
         href="css/app.css">
+
+    <!-- Estilos del módulo activo -->
+    <link
+        id="moduleStyle"
+        rel="stylesheet"
+        href="">
 
 </head>
 
 <body>
 
-    <div class="contenedor">
+    <header id="topBar">
 
-        <h1>🐸 FROGGIN COLIMA</h1>
+        <button
+            id="btnBack"
+            onclick="abrirModulo('home')">
 
-        <p class="subtitulo">
+            ← Home
 
-            School Management Suite
+        </button>
 
-        </p>
+        <div>
 
-        <div id="menuPrincipal">
+      <h1>🐸 FROGGIN COLIMA</h1>
+
+        <p
+        id="moduleTitle"
+        class="subtitulo">
+
+        Home
+
+     </p>
 
         </div>
 
-    </div>
+    </header>
 
-<script src="js/app.js"></script>
+    <main id="contenido">
+
+        <!-- Aquí el router cargará los módulos -->
+
+    </main>
+
+    <!-- Configuración global -->
+    <script src="js/config.js"></script>
+
+    <!-- Router -->
+    <script src="js/router.js"></script>
 
 </body>
 
